@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="register-heading">Register</h2>
+            <span class="icon close-icon" id="cross"><ion-icon name="close"></ion-icon></span>
+            <div class="choosebar">
+                <div class="tabs " id="admin"><a href="admin.html">Admin</a></div>
+                <div class="tabs " id="student"><a href="student.html">Student</a></div>
+                <div class="tabs " id="teacher"><a href="teacher.html">Teacher</a></div>
+
+            </div>
+
+            <div class="formbox">
+                <form action="#" class="formcontent">
+                    <div id="item0" class="item">
+                        <!-- <label for="role">Role:</label> -->
+                        <input type="text" placeholder="Role" id="Role" class="inputbar" value="Admin" readonly>
+                        <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+
+                    </div>
+                    <div id="item1" class="item">
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" placeholder="Name" id="name" class="inputbar" required>
+
+                    </div>
+                    <div id="item10" class="item">
+                        <p id="messagename"></p>
+                    </div>
+                    <div id="item2" class="item">
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" placeholder="Email" id="email" class="inputbar" required>
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    </div>
+                    <div id="item3" class="item">
+                        <!-- <label for="name">Password:</label> -->
+                        <input type="password" placeholder="Password" id="password" class="inputbar" required>
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    </div>
+                    <div id="item11" class="item">
+                        <p id="messagelength"></p>
+                    </div>
+                    <div id="item4" class="item">
+                        <!-- <label for="name">Confirm Password:</label> -->
+                        <input type="password" placeholder="Confirm Password" id="cnfrm-password" class="inputbar" required>
+                    </div>
+
+                 
+
+                    <div id="item6" class="item">
+                        <p id="message"></p>
+                    </div>
+                    <div id="item8" class="item">
+                        <input type="checkbox" id="check-box1"><label for="" id="terms" required>I agree to the terms and
+                            conditions</label>
+                    </div>
+
+                    <div id="item9" class="item">
+                        <button class="btn-black" onclick="checkPassword(); checkName(); checkPasswordLength(); checkCheckbox()"><a href="adminsection.html"   class="reglog-button" target="_blank">Register</a></button>
+                    </div>
+
+                </form>
+            </div>
+  
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+    
+    </script>
+
+</body>
+
+</html>
